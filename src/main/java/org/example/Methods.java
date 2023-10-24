@@ -15,13 +15,14 @@ public class Methods {
 
     /**
      * Тот же метод, но возраст и размер повышения параметры метода.
-     * @param emp -массив с сотрудниками
-     * @param age - возраст
+     *
+     * @param emp    -массив с сотрудниками
+     * @param age    - возраст
      * @param amount - размер увеличения з/п
      */
-    public static void increaser2(Employee[] emp, int age, int amount){
+    public static void increaser2(Employee[] emp, int age, int amount) {
         for (Employee employee : emp) {
-            if(age > 45 && employee.getAge() == age){
+            if (age > 45 && employee.getAge() == age) {
                 employee.salary += amount;
             }
         }
@@ -31,9 +32,10 @@ public class Methods {
     /**
      * Метод (принимающие на вход массив сотрудников),
      * вычисляющий средний возраст сотрудников
-     * @param emp  - массив сотрудников
+     *
+     * @param emp - массив сотрудников
      */
-    public static void averageAge (Employee[] emp){
+    public static void averageAge(Employee[] emp) {
         double averAge = 0;
         for (Employee employee : emp) {
             averAge += employee.getAge();
@@ -41,7 +43,7 @@ public class Methods {
         System.out.println("Aver. age = " + (averAge / emp.length));
     }
 
-    public static void averageSalary (Employee[] emp) {
+    public static void averageSalary(Employee[] emp) {
         double averSal = 0;
         for (Employee employee : emp) {
             averSal += employee.salary;

@@ -9,13 +9,14 @@ import lombok.*;
 public class Director extends Employee {
     /**
      * Класс "Директор"
-     * @param surname - фамилия
-     * @param name - имя
-     * @param middleName - отчество
-     * @param position - должность
+     *
+     * @param surname     - фамилия
+     * @param name        - имя
+     * @param middleName  - отчество
+     * @param position    - должность
      * @param phoneNumber - номер телефона
-     * @param salary - зарплата
-     * @param birth - дата рождения
+     * @param salary      - зарплата
+     * @param birth       - дата рождения
      */
     public Director(String surname, String name, String middleName,
                     String position, int phoneNumber, double salary, int birth) {
@@ -35,5 +36,4 @@ public class Director extends Employee {
         }
         System.out.println("\nПосле повышения з/п:");
     }
-
 }
